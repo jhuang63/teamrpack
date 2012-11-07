@@ -1,0 +1,166 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{natbib}
+
+\theoremstyle{definition}
+\newtheorem{dfn}{Definition}
+
+\begin{document}
+
+% The numbers below controls the amount of space between the following sections
+\def\shiftdowna{0.32in}  % Adjust for balance
+\def\shiftdownb{0.22in}  % Adjust for balance
+
+% Set up the boiler plate at the top of the page
+
+\begin{center}
+\textbf{{\large Project Work Statement}}\\
+
+
+% SPONSOR
+\vspace \shiftdowna
+\underline {Sponsor}\\ 
+\vspace{5pt}
+\textsc{{\large Renaissance Technologies LLC}}\\
+
+
+% TITLE
+\vspace \shiftdowna
+\textbf{{\large A Study on Statistical Arbitrage}}
+
+
+% STUDENTS
+\vspace{0.35in}
+\vspace \shiftdownb
+\underline {Participants} \\
+\vspace{5pt}
+\text{Huinan Zhang}, \texttt{zhang.huinan@gmail.com}\\
+\text{Jing Huang}, \texttt{hjing.zju@gmail.com}\\
+\text{Rong Fan}, \texttt{fantasy0409@gmail.com}\\
+\vspace{3pt}
+
+
+
+
+% SPONSORS
+\vspace \shiftdownb
+\underline {Project Advisor}\\
+\vspace{5pt}
+\text{Nam Lee}, \texttt{nhlee@jhu.edu}
+
+% DATE
+\vspace \shiftdowna
+Date: \today
+
+\end{center}
+
+\vfill  
+%Fill page to force following note to bottom
+\footnoterule
+\noindent \small{Any apparent association of this work to Renaissance
+  Technologies is fictional, and the sole purpose of this work is a
+  class exercise.}
+
+\newpage
+
+\section{Background} 
+
+Renaissance Technologies is one of the leading, though not highly
+publicized, hedge fund. It uses sophisticated mathematical models and
+highly-optimized computer programs to carry out trading
+activities. According to a report on Wall Street Journal in 2005, the
+company has achieved a cumulative return of more than 2000\% of the
+the 11 years since its founding till 1999.  Renaissance Technologies
+currently have more than \$23 billion in assets under management. The
+company carries out its trading activities globally across a large
+variety of financial products. In terms of return performance,
+Renaissance Technologies is among the best hedge funds in the
+world. It maintains its advantage by actively conducting research on
+the market and trading strategies.
+
+
+\section{Problem Statement}
+
+Among the numerous trading transactions aimed at maximizing the return
+on investment, the most favorable ones are in the form of
+arbitrage. Arbitrage is the practice of making risk-less profit
+without cost. It takes advantage of the imperfections in the financial
+market as reflected by inadequate pricing of financial products.
+
+
+The difficulty of exercising arbitrage often lies in finding such
+opportunities and executing the transactions quickly before such
+opportunities disappear. It is our goal to explore the mechanisms of
+statistical arbitrage in order to help us find arbitrage
+opportunities. However, we will not be able to execute the
+trade. Instead, we estimate the time windows within which arbitrage
+opportunities exist. These time windows will serve as constraints for
+real order execution.
+
+
+
+
+
+
+\section{Approach}
+
+Our study begins with a literature review of existing arbitrage
+techniques. Our major source of information on the mechanism is
+academic papers. Based on existing papers, we will create a
+mathematical model for us to identify arbitrage opportunities. We will
+devise a trading strategy using the mathematical model to carry out
+trading.
+
+
+Our arbitrage trading strategy will be programmed in code, and
+back-tested using historical financial data. We will divide our
+testing data into two part: the training set and the test set. We plan
+to use around 12 months' data as training set and the 3 months' data
+immediately following them as test test. The performance of our
+program will be measured by the number of arbitrage opportunities
+found, the feasibility of the arbitrage measured as the length of the
+execution time window, and ultimately the potential return on
+investment if our trading program were used in practice.
+
+
+
+
+\section{Milestones}
+We have the following major deadlines:
+\begin{itemize}
+    \item Work Statement due date, Sep 28, 2012,
+    \item Midterm Presentation due date, Oct 12, 2012,
+    \item Progress Report due date, Oct 26, 2012,
+    \item Final Presentation due date, Nov 6, 2012,
+    \item Final Report due date, Nov 30, 2012.
+\end{itemize}
+
+\section{Deliverable}
+\subsection{From Team to Sponsor} % (fold)
+The following outputs are expected from this project:
+\begin{itemize}
+\item A trading program that implements statistical arbitrage
+\item The data for testing of the program
+\item A technical report providing the details of the trading program
+  and the result of the testing
+\end{itemize}
+
+\subsection{From Sponsor to Team} % (fold)
+
+The corporate regulations on information disclosure forbids the
+dissemination of any source code or data to a party that is not
+formally affiliated with Renaissance Technologies. We will only use
+information sources that is available publicly and the ones that are
+available to Johns Hopkins University students.
+
+
+%\newpage
+%\bibliographystyle{plain}
+%%\renewcommand\bibname{Selected Bibliography Including Cited Works}
+%\nocite{*}
+%\bibliography{biblio}
+
+\end{document}
